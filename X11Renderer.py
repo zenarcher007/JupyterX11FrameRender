@@ -4,7 +4,7 @@ from collections import deque
 import signal
 import subprocess
 import numpy as np
-os.environ['MUJOCO_GL'] = 'egl' # Tells mujoco to use an Nvidia GPU for display buffer rendering
+os.environ['MUJOCO_GL'] = 'egl' # Tells mujoco to use an Nvidia GPU for display buffer rendering. Remove this if this does not apply to you
 # To install necessary dependencies, open a terminal and type:
 # sudo apt update -y && sudo apt install -y xvfb xterm x11-apps imagemagick xdotool
 
