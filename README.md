@@ -10,3 +10,7 @@ plt.imshow(xbd.render())
   ...
 xbd.off()
 ```
+<br>
+## Dependencies
+This utilizes the "Xvfb", "convert", and "xdotool" shell commmands. You can install these as such (on Ubuntu)
+```sudo apt update -y && sudo apt install -y xvfb imagemagick xdotool```
