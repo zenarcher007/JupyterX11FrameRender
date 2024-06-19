@@ -1,5 +1,5 @@
-# JupyterX11FrameRender
-A Python class to simplify running an X11 framebuffer and rendering frames in jupyterlab
+# PyX11FrameRender
+A Python class to simplify running an X11 framebuffer and rendering frames. Works well in JupyterLab
 <br>
 ## Example
 ```
