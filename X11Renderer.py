@@ -68,9 +68,9 @@ class X11Renderer:
     except Exception as e:
       dataptr.setData(e)
       raise e
-    finally: # Turn "off"
-      self._xvfb_thread = None
-      self._xvfb_proc = None
+    #finally: # Turn "off"
+    #  self._xvfb_thread = None
+    #  self._xvfb_proc = None
 
   def isDisplayInUse(self):
     #proc = 
@@ -97,7 +97,7 @@ class X11Renderer:
         time.sleep(0.2)
     data = dataptr.getData() # Should hang until there is an item present in the queue
     if isinstance(data, Exception):
-      raise CalledProcessError from data
+      raise data #RuntimeError("_xvfb_thread passed an exception!") from data
     self._xvfb_proc = data
     assert(self._xvfb_proc is not None and self._xvfb_thread is not None)
   
